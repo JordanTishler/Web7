@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class=".w3-bar .w3-button">
+<title>The Bax Creek Boys</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/stylesheet.css">
+<link href="Images/logo.png" rel="shortcut icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script  src="JS/Javascript.js"> </script>
+</head>
+<body class = "backgroundgrey">
+<!--Jordan start-->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="Images/logosmall.png" alt="logo"> The Bax Creek Boys</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+      <a href="problem.html" class="w3-bar-item w3-button"> <i class="fa fa-book"></i> The Problem</a>
+      <a href="solutions.html" class="w3-bar-item w3-button"><i class="fa fa-users"></i> Our Solution</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large displaynone" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="problem.html" onclick="w3_close()" class="w3-bar-item w3-button">The Problem</a>
+  <a href="solutions.html" onclick="w3_close()" class="w3-bar-item w3-button">Our Solution</a>
+</nav>
+<!-- Jordan End -->
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white padding48" >
+    <span class="w3-jumbo w3-hide-small black main-title">How we can fix this problem</span>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium black main-title">How we can fix this problem</span>
+    <p class="clear"><a id = "problem" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" onclick="openModel(this.id)">The Issue</a></p>
+    <p class="clear"><a id = "proposal" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" onclick="openModel(this.id)">Proposal</a></p>
+  </div> 
+         <!-- The Modal -->
+         <div id="myModal" class="w3-modal">
+            <!-- Modal content -->
+            <div class=".w3-modal-content modal-content">
+              <span class="close">&times;</span>
+              <p id="modal-text">asdf</p>
+    </div>
+   </div>
+  <div class="w3-display-bottomleft w3-text-grey w3-large padding28x48">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+<div class="background2">
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">Our Team</h3>
+    <b><p class="w3-center w3-large">The Boys in The Bax Creek Boys</p></b>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="Images/jordan.png" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Jordan Tishler</h3>
+            <p class="w3-opacity">Lead</p>
+            <p>Jordan the big boy</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="Images/sam.png" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>Sam Pethick</h3>
+            <p class="w3-opacity">Art Director</p>
+            <p>Sam the artistic boy </p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="Images/chris.png" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Chris Lebert</h3>
+            <p class="w3-opacity">Knowledge behind the work</p>
+            <p>Chris the swav boy.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Modal Image Gallery
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+        }
+        
+        
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+        
+        function w3_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+          } else {
+            mySidebar.style.display = 'block';
+          }
+        }
+        
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+         // Get the modal
+    var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+function openModel(id) {
+  console.log(id)
+  if(id == "problem") {
+    document.getElementById("modal-text").innerHTML = "<div class='titled'>"+
+    "<h2> What we Plan To Solve</h2>"+
+    "<h3><b>Ideal</b></h3>"+
+    "<p>Understanding the best way to display election votes on the web in an interactive way, with respect to changes in the electorate over time.</p>"+
+    "<h3><b>Reality</b></h3>"+
+    "<p>Most election maps are misleading, and render votes by riding rather than having respect to population which is what drives election results.</p>"+
+    "<h3><b>Consequences</b></h3>"+
+    "<p>These maps mislead the public about what drives elections, and prevalence of certain parties compared to others.</p>"+
+    "</div>"
+  }
+  else if(id == "proposal") {
+    document.getElementById("modal-text").innerHTML = "<div class='titled'>"+
+    "<h2><b>Our Proposal</b></h2>"+
+    "<p>To create an interactive map that displays electoral data from past years, and updates based off of zoom, allowing for both national and local analysis.</p>"+
+    "</div>"    
+}
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+        </script>      
+</body>
+</html>
