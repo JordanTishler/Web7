@@ -2301,10 +2301,20 @@ html {
     }
 
   .margin24 {
-   padding-top: 5%;
+   padding-top: 60px;
   } 
 
   .padding23 { 
     padding-bottom: 5%;}
+
+.float {
+  margin-top: -90px;
+  margin-left: 230px
+}
+
+.fix {
+  clear:both
+
+}
   /* Jordan code end */
 
