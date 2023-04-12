@@ -659,7 +659,7 @@ html {
   .w3-threequarter,
   .w3-quarter {
     float: left;
-    width: 100%;
+    max-width: 800px;
   }
   
   .w3-col.s1 {
