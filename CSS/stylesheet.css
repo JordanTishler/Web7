@@ -660,8 +660,6 @@ html {
   .w3-quarter {
     float: left;
     width: 100%;
-    margin-left: 25%;
-    margin-right: 25%;
   }
   
   .w3-col.s1 {
@@ -791,6 +789,8 @@ html {
     .w3-col.l6 {
       width: 49.99999%;
       clear: both;
+      margin-left: 25%;
+      margin-right: 25%;
     }
   
     .w3-col.l7 {
@@ -2315,6 +2315,25 @@ html {
 .fix {
   clear:both
 
+}
+.width {
+  width: 100%;
+}
+
+.margin-left {
+  margin-left: 20px
+}
+.marginbot {
+  margin-bottom: 20px;
+}
+
+.floater {
+  float: right;
+  margin-left: 20px 
+}
+
+.marginbot2 {
+  padding-bottom: 30px;
 }
   /* Jordan code end */
 

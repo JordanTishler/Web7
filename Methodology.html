@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class=".w3-bar .w3-button">
+<title>The Bax Creek Boys</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/stylesheet.css">
+<link href="Images/logo.png" rel="shortcut icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script  src="JS/Javascript.js"> </script>
+</head>
+<body class = "backgroundgrey">
+<!--Jordan start-->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="Images/logosmall.png" alt="logo"> The Bax Creek Boys</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+      <a href="problem.html" class="w3-bar-item w3-button"> <i class="fa fa-book"></i> The Problem</a>
+      <a href="solutions.html" class="w3-bar-item w3-button"><i class="fa fa-users"></i> Our Solution</a>
+      <a href="Methodology.html" class="w3-bar-item w3-button"><i class="fa fa-users"></i> Methodology</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large displaynone" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="problem.html" onclick="w3_close()" class="w3-bar-item w3-button">The Problem</a>
+  <a href="solutions.html" onclick="w3_close()" class="w3-bar-item w3-button">Our Solution</a>
+  <a href="Methodology.html" onclick="w3_close()" class="w3-bar-item w3-button">Methodology</a>
+</nav>
+<!-- Jordan End -->
+<div class="margin-left marginbot2">
+<h1> Methodology</h1>
+<h2> How we created these</h2>
+<ol>
+<li>Through shape and size</li>
+<p>This was created by taking data from the ArcGIS living atlas of Ontario and then symbolizing it differently by using 2 fields instead of 1. We used the total ballots cast and the party won this now shows the map through the number of people who voted instead of through the area.</p>
+<li>Map dashboard</li>
+<p>We created this by getting our data from Open Canada/Canadian government and geo-referencing the data to locate it on ArcGIS Pro. Once the dashboard was created we added an indicator, a gauge, a list, and a pie graph. we then made sure it changed off of zoom and/or select. This made it easy for people to see exact information from exact electoral districts.  Once the dashboard was created we added an indicator, a gauge, a list, and a pie graph. we then made sure it changed off of zoom and/or select. This made it easy for people to see exact information from exact electoral districts.</p>
+<li>3D height map</li>
+<p>we created this by using experience builder. We used a mix of Canadian census population data and electoral districts' total area in Canada.  we then used 2 2Dmaps which showed the difference between area and population based on color where the darker the color the increased number. we then added 2 3d maps to show the same data but with a visual representation of height (example below)</p>
+<img src="Images/heightmap.png">
+</ol>
+<h1>
+References
+</h1>
+<p>Durran, D. R. (2019, July 8). Whose votes count the least in the Electoral College? The Conversation. https://theconversation.com/whose-votes-count-the-least-in-the-electoral-college-74280</p>
+</div>
