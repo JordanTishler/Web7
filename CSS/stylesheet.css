@@ -765,7 +765,7 @@ html {
     }
   }
   
-  @media (min-width: 993px) {
+  @media (min-width: 875px) {
     .w3-col.l1 {
       width: 8.33333%;
     }
@@ -875,13 +875,13 @@ html {
     display: inline-block !important;
   }
   
-  @media (max-width: 1200px) {
+  @media (max-width: 820px) {
     .w3-auto {
       max-width: 95%;
     }
   }
   
-  @media (max-width: 1320px) {
+  @media (max-width: 820px) {
     .w3-modal-content {
       margin: 0 10px;
       width: auto !important;
@@ -921,7 +921,7 @@ html {
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
     .w3-modal-content {
       width: 500px;
     }
@@ -931,7 +931,7 @@ html {
     }
   }
   
-  @media (min-width: 1320px) {
+  @media (min-width: 820px) {
     .w3-modal-content {
       width: 900px;
     }
@@ -2315,16 +2315,24 @@ html {
   margin-left: 230px
 }
 
+.float2 {
+  margin-top: -87px;
+  margin-left: 380px
+}
+
 .fix {
   clear:both
 
 }
 .width {
-  width: 100%;
+  max-width: 100%;
 }
 
 .margin-left {
   margin-left: 20px
+}
+.margin-right{
+  margin-right: 20px;
 }
 .marginbot {
   margin-bottom: 20px;
@@ -2337,6 +2345,12 @@ html {
 
 .marginbot2 {
   padding-bottom: 30px;
+}
+.paddingcorrect {
+  padding:128px 16px;
+}
+.margin-tops {
+  margin-top:64px
 }
   /* Jordan code end */
 
